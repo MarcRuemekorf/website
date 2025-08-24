@@ -5,10 +5,9 @@ import { motion, useAnimate } from "motion/react"
 import Image from "next/image";
 import { Box, chakra } from "@chakra-ui/react";
 
-// Create a motion-enabled Chakra Box
 const MotionBox = chakra(motion.div);
 
-export const Logo = () => {
+const Logo = () => {
     const [motionRef, animate] = useAnimate()
     const [imageKey, setImageKey] = useState(0)
 
