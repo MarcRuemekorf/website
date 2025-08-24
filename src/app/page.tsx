@@ -1,18 +1,28 @@
-import { HStack, VStack } from "@chakra-ui/react";
-import Logo from "@/components/ui/logo";
+import { VStack } from "@chakra-ui/react";
+import Header from "@/components/ui/header/Header";
+import Footer from "@/components/ui/footer/Footer";
+import MotionElement from "@/components/MotionElement";
+import TypewriterText from "@/components/ui/TypewriterText";
 
 export default function Home() {
+
   return (
-    <VStack>
-      <HStack width="full" align="left" justify="space-between" p="1rem" as="header">
-        <Logo />
-      </HStack>
-      <VStack as="main">
-        Main
+    <VStack h="100vh">
+      <Header />
+      <VStack as="main" h="full" flex="1" justify="center">
+        <MotionElement
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+              duration: 0.4,
+              y: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+          }}
+        >
+          Hello World!
+        </MotionElement>
+        <TypewriterText texts={["Welcome to my website!", "Enjoy your stay!"]} />
       </VStack>
-      <HStack as="footer">
-        Footer
-      </HStack>
+      <Footer />
     </VStack>
   );
 }
