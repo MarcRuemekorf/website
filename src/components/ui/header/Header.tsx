@@ -11,7 +11,6 @@ const Header: React.FC = () => {
             justify="space-between"
             py="1rem"
             as="header"
-            borderBottom="solid 1px #424242"
         >
             <Logo />
         </HStack>

@@ -10,7 +10,6 @@ const Footer: React.FC = () => {
             justify="space-between"
             py="1rem"
             as="footer"
-            borderTop="solid 1px #424242"
         >
             Footer
         </HStack>

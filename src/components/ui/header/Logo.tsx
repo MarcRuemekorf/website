@@ -47,7 +47,7 @@ const Logo = () => {
                     w="48px"
                     h="48px"
                     p="2px"
-                    bg="black"
+                    bg="transparent"
                     borderRadius="md"
                     outlineWidth="2px"
                     outlineStyle="solid"
