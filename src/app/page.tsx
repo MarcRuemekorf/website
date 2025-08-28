@@ -1,7 +1,7 @@
-import { VStack } from "@chakra-ui/react";
+import { VStack, Text } from "@chakra-ui/react";
 import Header from "@/components/ui/header/Header";
 import Footer from "@/components/ui/footer/Footer";
-import MotionElement from "@/components/MotionElement";
+import MotionElement from "@/components/ui/MotionElement";
 import TypewriterText from "@/components/ui/TypewriterText";
 
 export default function Home() {
@@ -18,7 +18,9 @@ export default function Home() {
               y: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
           }}
         >
-          Hello World!
+          <Text fontSize="2xl" fontWeight="bold">
+            Hello World!
+          </Text>
         </MotionElement>
         <TypewriterText texts={["Welcome to my website!", "Enjoy your stay!"]} />
       </VStack>

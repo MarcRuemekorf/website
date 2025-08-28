@@ -1,29 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono, Inter } from 'next/font/google';
+
 import { Provider } from "@/components/ui/Provider"
-import "./globals.css";
+import { ReactElement } from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const fontInter = Inter({
+	variable: '--font-inter',
+	subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const fontJetBrainsMono = JetBrains_Mono({
+	variable: '--font-jetbrains-mono',
+	subsets: ['latin'],
 });
+
 
 export const metadata: Metadata = {
   title: "Marc Ruemekorf",
   description: "My website",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+type RootLayoutProps = Readonly<{
+	children: React.ReactNode;
+}>;
+
+const RootLayout = ({ children }: RootLayoutProps): ReactElement => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${fontInter.variable} ${fontJetBrainsMono.variable}`}>
         <Provider>{children}</Provider>
       </body>
     </html>
   );
 }
+
+export default RootLayout;
