@@ -1,0 +1,6 @@
+.next/
+node_modules/
+*.yml
+*.yaml
+.gitlab/
+.vscode/settings.json
