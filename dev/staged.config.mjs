@@ -7,7 +7,6 @@ const config = {
 	// ==============================
 	'*.{ts,tsx}': [
 		// tsc runs for all files instead of only the edited ones
-		// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 		() => './node_modules/.bin/tsc --noEmit --project . --pretty',
 	],
 

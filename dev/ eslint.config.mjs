@@ -26,7 +26,7 @@ const projectRules = {
 	],
 };
 
-export default [
+const eslintConfig = [
 	{
 		plugins: {
 			'@typescript-eslint': typescriptPlugin,
@@ -74,3 +74,5 @@ export default [
 		ignores: ['.next/', 'src/types/'],
 	},
 ];
+
+export default eslintConfig;
