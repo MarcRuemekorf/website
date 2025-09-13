@@ -1,4 +1,4 @@
-import { defineTokens } from '@chakra-ui/react';
+import { defineTokens } from "@chakra-ui/react";
 
 // Chakra default values:
 // https://github.com/chakra-ui/chakra-ui/blob/main/packages/react/src/theme/tokens/colors.ts
@@ -6,33 +6,33 @@ import { defineTokens } from '@chakra-ui/react';
 const colors = defineTokens.colors({
   transparent: { value: "transparent" },
   current: { value: "currentColor" },
-  black: { value: "#09090B" },
-  white: { value: "#FFFFFF" },
+  black: { value: "#292524" },
+  white: { value: "#f5f5f4" },
   whiteAlpha: {
-    50: { value: "rgba(255, 255, 255, 0.04)" },
-    100: { value: "rgba(255, 255, 255, 0.06)" },
-    200: { value: "rgba(255, 255, 255, 0.08)" },
-    300: { value: "rgba(255, 255, 255, 0.16)" },
-    400: { value: "rgba(255, 255, 255, 0.24)" },
-    500: { value: "rgba(255, 255, 255, 0.36)" },
-    600: { value: "rgba(255, 255, 255, 0.48)" },
-    700: { value: "rgba(255, 255, 255, 0.64)" },
-    800: { value: "rgba(255, 255, 255, 0.80)" },
-    900: { value: "rgba(255, 255, 255, 0.92)" },
-    950: { value: "rgba(255, 255, 255, 0.95)" },
+    50: { value: "rgba(--var(--chakra-colors-white), 0.04)" },
+    100: { value: "rgba(--var(--chakra-colors-white), 0.06)" },
+    200: { value: "rgba(--var(--chakra-colors-white), 0.08)" },
+    300: { value: "rgba(--var(--chakra-colors-white), 0.16)" },
+    400: { value: "rgba(--var(--chakra-colors-white), 0.24)" },
+    500: { value: "rgba(--var(--chakra-colors-white), 0.36)" },
+    600: { value: "rgba(--var(--chakra-colors-white), 0.48)" },
+    700: { value: "rgba(--var(--chakra-colors-white), 0.64)" },
+    800: { value: "rgba(--var(--chakra-colors-white), 0.80)" },
+    900: { value: "rgba(--var(--chakra-colors-white), 0.92)" },
+    950: { value: "rgba(--var(--chakra-colors-white), 0.95)" },
   },
   blackAlpha: {
-    50: { value: "rgba(0, 0, 0, 0.04)" },
-    100: { value: "rgba(0, 0, 0, 0.06)" },
-    200: { value: "rgba(0, 0, 0, 0.08)" },
-    300: { value: "rgba(0, 0, 0, 0.16)" },
-    400: { value: "rgba(0, 0, 0, 0.24)" },
-    500: { value: "rgba(0, 0, 0, 0.36)" },
-    600: { value: "rgba(0, 0, 0, 0.48)" },
-    700: { value: "rgba(0, 0, 0, 0.64)" },
-    800: { value: "rgba(0, 0, 0, 0.80)" },
-    900: { value: "rgba(0, 0, 0, 0.92)" },
-    950: { value: "rgba(0, 0, 0, 0.95)" },
+    50: { value: "rgba(--var(--chakra-colors-black), 0.04)" },
+    100: { value: "rgba(--var(--chakra-colors-black), 0.06)" },
+    200: { value: "rgba(--var(--chakra-colors-black), 0.08)" },
+    300: { value: "rgba(--var(--chakra-colors-black), 0.16)" },
+    400: { value: "rgba(--var(--chakra-colors-black), 0.24)" },
+    500: { value: "rgba(--var(--chakra-colors-black), 0.36)" },
+    600: { value: "rgba(--var(--chakra-colors-black), 0.48)" },
+    700: { value: "rgba(--var(--chakra-colors-black), 0.64)" },
+    800: { value: "rgba(--var(--chakra-colors-black), 0.80)" },
+    900: { value: "rgba(--var(--chakra-colors-black), 0.92)" },
+    950: { value: "rgba(--var(--chakra-colors-black), 0.95)" },
   },
   gray: {
     50: { value: "#fafafa" },
@@ -164,6 +164,6 @@ const colors = defineTokens.colors({
     900: { value: "#45061f" },
     950: { value: "#2c0514" },
   },
-})
+});
 
 export default colors;

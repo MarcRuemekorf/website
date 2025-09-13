@@ -21,7 +21,13 @@ const Logo = () => {
 
     const motionAnimation = animate(
       motionElement,
-      { outlineColor: ["#ff0088", "#0d63f8"] },
+      {
+        outlineColor: [
+          "var(--chakra-colors-cyan-500)",
+          "var(--chakra-colors-purple-500)",
+          "var(--chakra-colors-pink-500)",
+        ],
+      },
       {
         duration: 2,
         repeat: Infinity,
@@ -47,7 +53,7 @@ const Logo = () => {
           borderRadius="md"
           outlineWidth="2px"
           outlineStyle="solid"
-          outlineColor="#ff0088"
+          outlineColor="blue.500"
           whileHover={{
             outlineWidth: "4px",
             transition: { duration: 0.1 },

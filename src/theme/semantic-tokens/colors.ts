@@ -1,6 +1,6 @@
-import { defineSemanticTokens } from '@chakra-ui/react';
+import { defineSemanticTokens } from "@chakra-ui/react";
 
-export const semanticColors = defineSemanticTokens.colors({
+const semanticColors = defineSemanticTokens.colors({
   bg: {
     DEFAULT: {
       value: { _light: "{colors.white}", _dark: "{colors.black}" },
@@ -328,4 +328,6 @@ export const semanticColors = defineSemanticTokens.colors({
       value: { _light: "{colors.cyan.500}", _dark: "{colors.cyan.500}" },
     },
   },
-})
+});
+
+export default semanticColors;
