@@ -23,9 +23,15 @@ const Hero: React.FC<HeroProps> = () => {
                 y: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
               }}
             >
-              <Heading as="h1" size="7xl" fontWeight="bold" maxW="64ch">
+              <Text
+                as="h1"
+                fontSize="9xl"
+                lineHeight="1"
+                fontWeight="bold"
+                maxW="64ch"
+              >
                 Frontend developer met een achtergrond in design
-              </Heading>
+              </Text>
             </MotionElement>
           </Box>
         </Flex>
