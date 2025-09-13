@@ -6,7 +6,7 @@ import { defineTokens } from "@chakra-ui/react";
 const colors = defineTokens.colors({
   transparent: { value: "transparent" },
   current: { value: "currentColor" },
-  black: { value: "#292524" },
+  black: { value: "#1c1917" },
   white: { value: "#f5f5f4" },
   whiteAlpha: {
     50: { value: "rgba(--var(--chakra-colors-white), 0.04)" },
@@ -124,6 +124,19 @@ const colors = defineTokens.colors({
     800: { value: "#1a3478" },
     900: { value: "#14204a" },
     950: { value: "#0c142e" },
+  },
+  indigo: {
+    50: { value: "#eef2ff" },
+    100: { value: "#e0e7ff" },
+    200: { value: "#c7d2fe" },
+    300: { value: "#a5b4fc" },
+    400: { value: "#818cf8" },
+    500: { value: "#6366f1" },
+    600: { value: "#4f46e5" },
+    700: { value: "#4338ca" },
+    800: { value: "#3730a3" },
+    900: { value: "#312e81" },
+    950: { value: "#1e1b4b" },
   },
   cyan: {
     50: { value: "#ecfeff" },

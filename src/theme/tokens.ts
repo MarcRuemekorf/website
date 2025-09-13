@@ -2,8 +2,8 @@ import colors from "@/theme/tokens/colors";
 import fonts from "@/theme/tokens/fonts";
 
 const tokens = {
-  fonts,
   colors,
+  fonts,
 };
 
 export default tokens;
