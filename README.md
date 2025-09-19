@@ -1,10 +1,9 @@
 ## Getting Started
 
-First, run the development server:
+To initialize the project, run:
 
 ```bash
-yarn install
-yarn dev
+./Taskfile init
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This command will install the necessary dependencies and start the development server at http://localhost:3000.
