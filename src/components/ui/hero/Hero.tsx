@@ -13,7 +13,7 @@ const Hero: React.FC<HeroProps> = () => {
   return (
     <Box as="section" h="full" maxH="100dvh" maxW="full" p="3rem">
       <VStack h="full">
-        <HStack w="full" gap="2rem" justify="space-between">
+        <HStack w="full" gap="2rem" justify="space-between" align="start">
           <Logo />
           <MotionElement
             initial={{ opacity: 0, y: 10 }}
@@ -43,9 +43,11 @@ const Hero: React.FC<HeroProps> = () => {
               as="h1"
               fontSize="5xl"
               sm={{ fontSize: "7xl" }}
-              md={{ fontSize: "9xl" }}
-              lineHeight="1.2"
+              lg={{ fontSize: "8xl" }}
+              xl={{ fontSize: "9xl" }}
+              lineHeight="1.15"
               maxW="16ch"
+              textStyle="italic"
             >
               <Text as={gradientText} fontWeight="bold" color="gray.400">
                 Front-end developer

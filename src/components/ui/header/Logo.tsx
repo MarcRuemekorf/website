@@ -23,9 +23,13 @@ const Logo = () => {
       motionElement,
       {
         outlineColor: [
-          "var(--chakra-colors-cyan-500)",
-          "var(--chakra-colors-purple-500)",
-          "var(--chakra-colors-pink-500)",
+          "#7b84ff",
+          "#68a5ff",
+          "#5fc6ff",
+          "#63e5fc",
+          "#73ffcd",
+          "#8dff9d",
+          "#aeff6f"
         ],
       },
       {
@@ -51,15 +55,15 @@ const Logo = () => {
           p="2px"
           bg="transparent"
           borderRadius="md"
-          outlineWidth="2px"
+          outlineWidth="4px"
           outlineStyle="solid"
           outlineColor="blue.500"
           whileHover={{
-            outlineWidth: "4px",
+            outlineWidth: "2px",
             transition: { duration: 0.1 },
           }}
           whileTap={{
-            outlineWidth: "2px",
+            outlineWidth: "4px",
           }}
           cursor="pointer"
           onClick={handleClick}

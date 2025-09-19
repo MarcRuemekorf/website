@@ -7,11 +7,24 @@ type MotionElementProps = {
 } & HTMLMotionProps<"span">;
 
 const gradientText = ({ children, ...props }: MotionElementProps) => {
+  // const gradientColors = [
+  //   "var(--chakra-colors-cyan-500)",
+  //   "var(--chakra-colors-purple-500)",
+  //   "var(--chakra-colors-pink-500)",
+  // ];
+
   const gradientColors = [
-    "var(--chakra-colors-cyan-500)",
-    "var(--chakra-colors-purple-500)",
-    "var(--chakra-colors-pink-500)",
+    "#7b84ff",
+    "#68a5ff",
+    "#5fc6ff",
+    "#63e5fc",
+    "#73ffcd",
+    "#8dff9d",
+    "#aeff6f"
   ];
+
+
+  
 
   return (
     <motion.span
