@@ -11,6 +11,8 @@
 		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap"
 		rel="stylesheet" />
 	<link href="styles/styles.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
 
 	<!-- Nav -->
 	<nav id="nav">
-		<span class="nav-logo">marcruemekorf</span>
+		<span class="nav-logo">MR</span>
 		<ul class="nav-links">
 			<li><a href="#work">Work</a></li>
 			<li><a href="#about">About</a></li>
@@ -260,6 +262,48 @@
 	<script>
 		// Current year
 		document.getElementById('year').textContent = new Date().getFullYear();
+
+		// GSAP animations
+		gsap.registerPlugin(ScrollTrigger);
+
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		const animatedEls = ['.hero-tag p', '.hero-title', '.hero-sub', '.hero-rule', '.hero-occupation', '.section-header', '.timeline-item', '.about-strip', 'footer'];
+
+		if (prefersReducedMotion) {
+			gsap.set(animatedEls, { opacity: 1, y: 0 });
+		} else {
+			// Hero load sequence
+			gsap.timeline({ defaults: { ease: 'power2.out' } })
+				.from('.hero-tag p', { opacity: 0, y: 30, duration: 0.6 })
+				.from('.hero-title', { opacity: 0, y: 30, duration: 0.8 }, '-=0.3')
+				.from('.hero-sub', { opacity: 0, y: 30, duration: 0.6 }, '-=0.3')
+				.from('.hero-rule', { opacity: 0, y: 20, duration: 0.5 }, '-=0.2')
+        .from('.hero-occupation', { opacity: 0, x: 10, duration: 0.5 }, '-=0.2');
+
+			// Section header
+			gsap.from('.section-header', {
+				scrollTrigger: { trigger: '.section-header', start: 'top 85%', once: true },
+				opacity: 0, y: 20, duration: 0.6, ease: 'power2.out'
+			});
+
+			// Timeline items stagger
+			gsap.from('.timeline-item', {
+				scrollTrigger: { trigger: '.timeline', start: 'top 85%', once: true },
+				opacity: 0, y: 30, duration: 0.6, stagger: 0.15, ease: 'power2.out'
+			});
+
+			// About strip
+			gsap.from('.about-strip', {
+				scrollTrigger: { trigger: '.about-strip', start: 'top 85%', once: true },
+				opacity: 0, y: 30, duration: 0.7, ease: 'power2.out'
+			});
+
+			// Footer
+			gsap.from('footer', {
+				scrollTrigger: { trigger: 'footer', start: 'top 95%', once: true },
+				opacity: 0, y: 20, duration: 0.5, ease: 'power2.out'
+			});
+		}
 
 		// Custom cursor
 		const cursor = document.getElementById('cursor');

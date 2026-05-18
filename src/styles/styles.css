@@ -259,8 +259,6 @@ nav.scrolled {
 	letter-spacing: 0.2em;
 	color: var(--accent);
 	text-transform: uppercase;
-	opacity: 0;
-	animation: fadeUp 0.6s 0.2s ease forwards;
 }
 
 .hero-title {
@@ -269,8 +267,6 @@ nav.scrolled {
 	line-height: 0.85;
 	letter-spacing: -0.01em;
 	text-transform: uppercase;
-	opacity: 0;
-	animation: fadeUp 0.8s 0.4s ease forwards;
 }
 
 .hero-title em {
@@ -288,8 +284,6 @@ nav.scrolled {
 	justify-content: space-between;
 	margin-top: 3rem;
 	gap: 2rem;
-	opacity: 0;
-	animation: fadeUp 0.6s 0.8s ease forwards;
 }
 
 .hero-desc {
@@ -342,8 +336,6 @@ nav.scrolled {
 	gap: 1.5rem;
 	border-top: 1px solid var(--border);
 	padding: 1.5rem 0;
-	opacity: 0;
-	animation: fadeUp 0.6s 1s ease forwards;
 }
 
 .hero-rule-num {
@@ -704,18 +696,6 @@ footer a:hover {
 }
 
 /* ── Animations ── */
-@keyframes fadeUp {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
 @keyframes marquee {
 	from {
 		transform: translateX(0);
