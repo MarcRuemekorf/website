@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Marc Ruemekorf — Fullstack Developer</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap"
+		rel="stylesheet" />
+	<link href="styles/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div id="cursor"></div>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<span class="nav-logo">marcruemekorf</span>
+		<ul class="nav-links">
+			<li><a href="#work">Work</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Hero -->
+	<section class="hero">
+		<div id="blob-a" class="blob"></div>
+		<div id="blob-b" class="blob"></div>
+
+		<div class="hero-grid"></div>
+		<span class="hero-occupation">Sinds 2022 goed op mijn plek bij <img
+				src="../public/enrise_logo_color_on_dark.svg" alt="Enrise"
+				style="height: 1.5em; vertical-align: middle; display: inline;" /></span>
+
+		<div class="hero-content">
+			<div class="hero-tag">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none">
+					<path
+						d="M 228 0 C 172.772 0 128 44.772 128 100 L 128 0 L 0 0 L 0 28 C 0 83.228 44.772 128 100 128 L 0 128 L 0 256 L 28 256 C 83.228 256 128 211.228 128 156 L 128 256 L 256 256 L 256 228 C 256 172.772 211.228 128 156 128 L 256 128 L 256 0 Z"
+						fill="var(--accent)"></path>
+				</svg>
+				<p>Marc Ruemekorf</p>
+			</div>
+			<h1 class="hero-title">
+				Fullstack<br /><em>developer</em>
+			</h1>
+			<div class="hero-sub">
+				<p class="hero-desc">
+					Met focus op <strong>design</strong> en <strong>frontend development</strong> bouw ik snelle,
+					toegankelijke en verfijnde ervaringen op het web.
+				</p>
+				<a href="#work" class="hero-cta">
+					Meer over mij
+					<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</a>
+			</div>
+		</div>
+
+		<div class="hero-rule">
+			<span class="hero-rule-num">01 / Hero</span>
+			<div class="hero-rule-line"></div>
+			<span class="hero-scroll-hint">
+				<span class="scroll-dot"></span>
+				Scroll voor meer
+			</span>
+		</div>
+	</section>
+
+	<!-- Marquee -->
+	<div class="marquee-wrap" aria-hidden="true">
+		<div class="marquee-track">
+			<span class="marquee-item">HTML <span class="marquee-sep"></span></span>
+			<span class="marquee-item">CSS <span class="marquee-sep"></span></span>
+			<span class="marquee-item">JavaScript <span class="marquee-sep"></span></span>
+			<span class="marquee-item">React <span class="marquee-sep"></span></span>
+			<span class="marquee-item">TypeScript <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Node.js <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Figma <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Accessibility <span class="marquee-sep"></span></span>
+			<span class="marquee-item">HTML <span class="marquee-sep"></span></span>
+			<span class="marquee-item">CSS <span class="marquee-sep"></span></span>
+			<span class="marquee-item">JavaScript <span class="marquee-sep"></span></span>
+			<span class="marquee-item">React <span class="marquee-sep"></span></span>
+			<span class="marquee-item">TypeScript <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Node.js <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Figma <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Accessibility <span class="marquee-sep"></span></span>
+			<span class="marquee-item">HTML <span class="marquee-sep"></span></span>
+			<span class="marquee-item">CSS <span class="marquee-sep"></span></span>
+			<span class="marquee-item">JavaScript <span class="marquee-sep"></span></span>
+			<span class="marquee-item">React <span class="marquee-sep"></span></span>
+			<span class="marquee-item">TypeScript <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Node.js <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Figma <span class="marquee-sep"></span></span>
+			<span class="marquee-item">Accessibility <span class="marquee-sep"></span></span>
+		</div>
+	</div>
+
+	<!-- Experience Section -->
+	<section class="experience" id="experience">
+		<div class="section-header">
+			<h2 class="section-title">Ervaring</h2>
+			<span class="section-num">02 / Ervaring</span>
+		</div>
+
+		<div class="timeline">
+
+			<div class="timeline-item current">
+				<div class="timeline-item-body">
+					<div class="timeline-meta">
+						<span class="timeline-period">2022 — Heden</span>
+						<span class="timeline-current-badge">Huidige positie</span>
+					</div>
+					<h3 class="timeline-role">Frontend Developer</h3>
+					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
+							rel="noopener noreferrer">Enrise</a></p>
+					<p class="timeline-desc">
+						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
+						aan complexe webapplicaties met een focus op kwaliteit.
+					</p>
+					<div class="timeline-tags">
+						<span class="timeline-tag">React</span>
+						<span class="timeline-tag">TypeScript</span>
+						<span class="timeline-tag">CSS / SASS</span>
+						<span class="timeline-tag">Figma</span>
+					</div>
+				</div>
+				<div class="timeline-image">
+					<!-- TODO: Replace src with a real photo -->
+					<div class="timeline-image-placeholder">Add image</div>
+				</div>
+			</div>
+
+
+			<div class="timeline-item">
+				<div class="timeline-item-body">
+					<div class="timeline-meta">
+						<span class="timeline-period">2022 — Heden</span>
+					</div>
+					<h3 class="timeline-role">Frontend Developer</h3>
+					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
+							rel="noopener noreferrer">Enrise</a></p>
+					<p class="timeline-desc">
+						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
+						aan complexe webapplicaties met een focus op kwaliteit.
+					</p>
+					<div class="timeline-tags">
+						<span class="timeline-tag">React</span>
+						<span class="timeline-tag">TypeScript</span>
+						<span class="timeline-tag">CSS / SASS</span>
+						<span class="timeline-tag">Figma</span>
+					</div>
+				</div>
+				<div class="timeline-image">
+					<!-- TODO: Replace src with a real photo -->
+					<div class="timeline-image-placeholder">Add image</div>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<div class="timeline-item-body">
+					<div class="timeline-meta">
+						<span class="timeline-period">2022 — Heden</span>
+					</div>
+					<h3 class="timeline-role">Frontend Developer</h3>
+					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
+							rel="noopener noreferrer">Enrise</a></p>
+					<p class="timeline-desc">
+						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
+						aan complexe webapplicaties met een focus op kwaliteit.
+					</p>
+					<div class="timeline-tags">
+						<span class="timeline-tag">React</span>
+						<span class="timeline-tag">TypeScript</span>
+						<span class="timeline-tag">CSS / SASS</span>
+						<span class="timeline-tag">Figma</span>
+					</div>
+				</div>
+				<div class="timeline-image">
+					<!-- TODO: Replace src with a real photo -->
+					<div class="timeline-image-placeholder">Add image</div>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<div class="timeline-item-body">
+					<div class="timeline-meta">
+						<span class="timeline-period">2022 — Heden</span>
+					</div>
+					<h3 class="timeline-role">Frontend Developer</h3>
+					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
+							rel="noopener noreferrer">Enrise</a></p>
+					<p class="timeline-desc">
+						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
+						aan complexe webapplicaties met een focus op kwaliteit.
+					</p>
+					<div class="timeline-tags">
+						<span class="timeline-tag">React</span>
+						<span class="timeline-tag">TypeScript</span>
+						<span class="timeline-tag">CSS / SASS</span>
+						<span class="timeline-tag">Figma</span>
+					</div>
+				</div>
+				<div class="timeline-image">
+					<!-- TODO: Replace src with a real photo -->
+					<div class="timeline-image-placeholder">Add image</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- About Section -->
+	<div class="about-strip" id="about">
+		<div>
+			<h2 class="about-title">Actief als<br /><em>developer</em><br />sinds 2015</h2>
+			<div class="skills-row">
+				<span class="skill-pill">HTML</span>
+				<span class="skill-pill">React / NextJS</span>
+				<span class="skill-pill">Vue</span>
+				<span class="skill-pill">TypeScript</span>
+				<span class="skill-pill">CSS / SASS</span>
+				<span class="skill-pill">Node.js</span>
+				<span class="skill-pill">Figma</span>
+				<span class="skill-pill">Accessibility</span>
+			</div>
+		</div>
+		<div class="about-body">
+			<p>
+				Ik ben een frontend developer met een achtergrond in <strong>design</strong>.
+				Ik hecht veel waarde aan de details die de ervaring prettig maken, van micro-interacties tot typografie
+				en kleurgebruik.
+			</p>
+			<p>
+				Ik werk nauw samen met ontwerpers, developers en business analysten om ideeën om te zetten in
+				verfijnde, toegankelijke en performante ervaringen.
+			</p>
+		</div>
+	</div>
+
+	<!-- Footer / Contact -->
+	<footer id="contact">
+		<span>© <span id="year"></span> Marc Ruemekorf</span>
+		<span>
+			<a href="mailto:hallo@marcruemekorf.nl" disabled aria-disabled="true">hallo@marcruemekorf.nl</a>
+		</span>
+		<span>
+			<a href="https://github.com" target="_blank">GitHub</a>
+			&nbsp;·&nbsp;
+			<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+		</span>
+	</footer>
+
+	<script>
+		// Current year
+		document.getElementById('year').textContent = new Date().getFullYear();
+
+		// Custom cursor
+		const cursor = document.getElementById('cursor');
+		document.addEventListener('mousemove', e => {
+			cursor.style.left = e.clientX + 'px';
+			cursor.style.top = e.clientY + 'px';
+		});
+		document.querySelectorAll('a, button, .project-card').forEach(el => {
+			el.addEventListener('mouseenter', () => cursor.classList.add('grow'));
+			el.addEventListener('mouseleave', () => cursor.classList.remove('grow'));
+		});
+
+		// Sticky nav
+		const nav = document.getElementById('nav');
+		window.addEventListener('scroll', () => {
+			nav.classList.toggle('scrolled', window.scrollY > 60);
+		});
+
+		// Gradient blobs
+		function rand(min, max) { return Math.random() * (max - min) + min; }
+
+		function animateBlob(el) {
+			const vw = window.innerWidth;
+			const vh = window.innerHeight;
+			const w = el.offsetWidth;
+			const h = el.offsetHeight;
+
+			const x = rand(-w * 0.3, vw - w * 0.7);
+			const y = rand(-h * 0.3, vh - h * 0.7);
+			const rx = rand(40, 60);
+			const ry = rand(40, 60);
+			const rz = rand(40, 60);
+			const rw = rand(40, 60);
+
+			el.style.transform = `translate(${x}px, ${y}px)`;
+			el.style.borderRadius = `${rx}% ${100 - rx}% ${ry}% ${100 - ry}% / ${rz}% ${rw}% ${100 - rw}% ${100 - rz}%`;
+
+			const delay = rand(3000, 6000);
+			setTimeout(() => animateBlob(el), delay);
+		}
+
+		const blobA = document.getElementById('blob-a');
+		const blobB = document.getElementById('blob-b');
+
+		animateBlob(blobA);
+		setTimeout(() => animateBlob(blobB), 1500);
+
+		requestAnimationFrame(() => {
+			setTimeout(() => {
+				blobA.classList.add('visible');
+				blobB.classList.add('visible');
+			}, 100);
+		});
+
+	</script>
+
+</body>
+
+</html>
