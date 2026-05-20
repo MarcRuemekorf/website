@@ -21,11 +21,10 @@
 
 	<!-- Nav -->
 	<nav id="nav">
-		<span class="nav-logo">MR</span>
+		<span class="nav-logo">Marc Ruemekorf</span>
 		<ul class="nav-links">
-			<li><a href="#work">Work</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#experience">Projecten</a></li>
+			<li><a href="#about">Over mij</a></li>
 		</ul>
 	</nav>
 
@@ -35,33 +34,28 @@
 		<div id="blob-b" class="blob"></div>
 
 		<div class="hero-grid"></div>
-		<span class="hero-occupation">Sinds 2022 goed op mijn plek bij <img
+		<span class="hero-occupation">Sinds 2022 goed op mijn plek bij 
+      <img
 				src="../public/enrise_logo_color_on_dark.svg" alt="Enrise"
-				style="height: 1.5em; vertical-align: middle; display: inline;" /></span>
+				style="height: 1.5em; vertical-align: middle; display: inline;"
+      />
+    </span>
 
 		<div class="hero-content">
-			<div class="hero-tag">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none">
-					<path
-						d="M 228 0 C 172.772 0 128 44.772 128 100 L 128 0 L 0 0 L 0 28 C 0 83.228 44.772 128 100 128 L 0 128 L 0 256 L 28 256 C 83.228 256 128 211.228 128 156 L 128 256 L 256 256 L 256 228 C 256 172.772 211.228 128 156 128 L 256 128 L 256 0 Z"
-						fill="var(--accent)"></path>
-				</svg>
-				<p>Marc Ruemekorf</p>
-			</div>
+			<div class="hero-profile-tag">
+        <img src="../public/marcruemekorf-portrait.jpg" alt="Marc Ruemekorf" />
+      </div>
 			<h1 class="hero-title">
-				Fullstack<br /><em>developer</em>
+				<span id="title-line1">Fullstack</span><br /><em id="title-line2">developer</em>
 			</h1>
 			<div class="hero-sub">
 				<p class="hero-desc">
 					Met focus op <strong>design</strong> en <strong>frontend development</strong> bouw ik snelle,
 					toegankelijke en verfijnde ervaringen op het web.
 				</p>
-				<a href="#work" class="hero-cta">
+				<a href="#experience" class="hero-cta">
 					Meer over mij
-					<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-							stroke-linejoin="round" />
-					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0e0e0d" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-down-icon lucide-chevrons-down"><path d="m7 6 5 5 5-5"/><path d="m7 13 5 5 5-5"/></svg>
 				</a>
 			</div>
 		</div>
@@ -70,7 +64,12 @@
 			<span class="hero-rule-num">01 / Hero</span>
 			<div class="hero-rule-line"></div>
 			<span class="hero-scroll-hint">
-				<span class="scroll-dot"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none">
+					<path
+						d="M 228 0 C 172.772 0 128 44.772 128 100 L 128 0 L 0 0 L 0 28 C 0 83.228 44.772 128 100 128 L 0 128 L 0 256 L 28 256 C 83.228 256 128 211.228 128 156 L 128 256 L 256 256 L 256 228 C 256 172.772 211.228 128 156 128 L 256 128 L 256 0 Z"
+						fill="var(--accent)"></path>
+				</svg>
+				<!-- <span class="scroll-dot"></span> -->
 				Scroll voor meer
 			</span>
 		</div>
@@ -109,35 +108,31 @@
 	<!-- Experience Section -->
 	<section class="experience" id="experience">
 		<div class="section-header">
-			<h2 class="section-title">Ervaring</h2>
-			<span class="section-num">02 / Ervaring</span>
+			<h2 class="section-title">Projecten</h2>
+			<span class="section-num">02 / Projecten</span>
 		</div>
 
 		<div class="timeline">
 
-			<div class="timeline-item current">
+			<div class="timeline-item">
 				<div class="timeline-item-body">
 					<div class="timeline-meta">
-						<span class="timeline-period">2022 — Heden</span>
-						<span class="timeline-current-badge">Huidige positie</span>
+            <span class="timeline-type">Web Applicatie</span>
+            <span class="timeline-status live">Live</span>
 					</div>
-					<h3 class="timeline-role">Frontend Developer</h3>
-					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
-							rel="noopener noreferrer">Enrise</a></p>
+					<h3 class="timeline-role">Connect & Care</h3>
+          
 					<p class="timeline-desc">
-						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
-						aan complexe webapplicaties met een focus op kwaliteit.
+						Een volledige herbouw van de frontend voor het centrale beheer platform van zorgtechnologie en het coördineren en optimaliseren van zorgprocessen. Het biedt zorgmedewerkers overzicht, flexibiliteit en betrouwbare ondersteuning in hun dagelijkse werk.
 					</p>
 					<div class="timeline-tags">
 						<span class="timeline-tag">React</span>
 						<span class="timeline-tag">TypeScript</span>
-						<span class="timeline-tag">CSS / SASS</span>
 						<span class="timeline-tag">Figma</span>
 					</div>
 				</div>
 				<div class="timeline-image">
-					<!-- TODO: Replace src with a real photo -->
-					<div class="timeline-image-placeholder">Add image</div>
+					<img src="../public/avics-case.png" alt="Connect & Care">
 				</div>
 			</div>
 
@@ -145,75 +140,79 @@
 			<div class="timeline-item">
 				<div class="timeline-item-body">
 					<div class="timeline-meta">
-						<span class="timeline-period">2022 — Heden</span>
+            <span class="timeline-type">Web Applicatie</span>
+            <span class="timeline-status live">Live</span>
 					</div>
-					<h3 class="timeline-role">Frontend Developer</h3>
-					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
-							rel="noopener noreferrer">Enrise</a></p>
+					<h3 class="timeline-role">Figo klantportaal</h3>
+					<div class="timeline-link">
+            <a href="https://enrise.com/case/figo/" target="_blank" rel="noopener noreferrer">
+              Bekijk case <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
 					<p class="timeline-desc">
-						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
-						aan complexe webapplicaties met een focus op kwaliteit.
+						Een klantportaal voor Figo dat gebruikers een overzichtelijke en efficiënte manier biedt om hun gegevens en interacties met Figo te beheren.
 					</p>
 					<div class="timeline-tags">
 						<span class="timeline-tag">React</span>
 						<span class="timeline-tag">TypeScript</span>
-						<span class="timeline-tag">CSS / SASS</span>
 						<span class="timeline-tag">Figma</span>
 					</div>
 				</div>
 				<div class="timeline-image">
-					<!-- TODO: Replace src with a real photo -->
-					<div class="timeline-image-placeholder">Add image</div>
+					<img src="../public/figo-case.webp" alt="Figo klantportaal">
 				</div>
 			</div>
 
 			<div class="timeline-item">
 				<div class="timeline-item-body">
 					<div class="timeline-meta">
-						<span class="timeline-period">2022 — Heden</span>
+						<span class="timeline-type">Web Applicatie</span>
+						<span class="timeline-status live">Live</span>
 					</div>
-					<h3 class="timeline-role">Frontend Developer</h3>
-					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
-							rel="noopener noreferrer">Enrise</a></p>
+					<h3 class="timeline-role">ZilliZ berichtenapp</h3>
+					<div class="timeline-link">
+            <a href="https://enrise.com/case/zilliz-berichten-app/" target="_blank" rel="noopener noreferrer">
+              Bekijk case <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
 					<p class="timeline-desc">
-						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
-						aan complexe webapplicaties met een focus op kwaliteit.
+						Een berichtenapp voor ZilliZ die gebruikers een efficiënte manier biedt om hun berichten te beheren en te communiceren binnen het platform.
 					</p>
 					<div class="timeline-tags">
 						<span class="timeline-tag">React</span>
 						<span class="timeline-tag">TypeScript</span>
-						<span class="timeline-tag">CSS / SASS</span>
-						<span class="timeline-tag">Figma</span>
+						<span class="timeline-tag">Node.JS</span>
 					</div>
 				</div>
 				<div class="timeline-image">
-					<!-- TODO: Replace src with a real photo -->
-					<div class="timeline-image-placeholder">Add image</div>
+					<img src="../public/zilliz-case.webp" alt="ZilliZ berichtenapp">
 				</div>
 			</div>
 
 			<div class="timeline-item">
 				<div class="timeline-item-body">
 					<div class="timeline-meta">
-						<span class="timeline-period">2022 — Heden</span>
+						<span class="timeline-type">Web Applicatie</span>
+						<span class="timeline-status wip">Work in progress</span>
 					</div>
-					<h3 class="timeline-role">Frontend Developer</h3>
-					<p class="timeline-company"><a href="https://enrise.com" target="_blank"
-							rel="noopener noreferrer">Enrise</a></p>
+					<h3 class="timeline-role">Retrotool</h3>
+					<div class="timeline-link">
+            <a href="https://github.com/MarcRuemekorf/hindsight" target="_blank" rel="noopener noreferrer">
+              Github <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
 					<p class="timeline-desc">
-						Frontend developer bij Enrise, een digitaal bureau gespecialiseerd in maatwerk software. Werk
-						aan complexe webapplicaties met een focus op kwaliteit.
+						Een tool voor retrospectives die teams helpt bij het verzamelen van feedback, het identificeren van verbeterpunten en het bevorderen van samenwerking.
 					</p>
 					<div class="timeline-tags">
 						<span class="timeline-tag">React</span>
 						<span class="timeline-tag">TypeScript</span>
-						<span class="timeline-tag">CSS / SASS</span>
 						<span class="timeline-tag">Figma</span>
 					</div>
 				</div>
 				<div class="timeline-image">
 					<!-- TODO: Replace src with a real photo -->
-					<div class="timeline-image-placeholder">Add image</div>
+					<div class="timeline-image-placeholder">W.I.P.</div>
 				</div>
 			</div>
 	</section>
@@ -221,7 +220,7 @@
 	<!-- About Section -->
 	<div class="about-strip" id="about">
 		<div>
-			<h2 class="about-title">Actief als<br /><em>developer</em><br />sinds 2015</h2>
+			<h2 class="about-title">Actief als<br /><em id="about-title-line">developer</em><br />sinds 2015</h2>
 			<div class="skills-row">
 				<span class="skill-pill">HTML</span>
 				<span class="skill-pill">React / NextJS</span>
@@ -234,6 +233,9 @@
 			</div>
 		</div>
 		<div class="about-body">
+      <div class="profile-tag">
+        <img src="../public/marcruemekorf-portrait.jpg" alt="Marc Ruemekorf" />
+      </div>
 			<p>
 				Ik ben een frontend developer met een achtergrond in <strong>design</strong>.
 				Ik hecht veel waarde aan de details die de ervaring prettig maken, van micro-interacties tot typografie
@@ -253,9 +255,9 @@
 			<a href="mailto:hallo@marcruemekorf.nl" disabled aria-disabled="true">hallo@marcruemekorf.nl</a>
 		</span>
 		<span>
-			<a href="https://github.com" target="_blank">GitHub</a>
+			<a href="https://github.com/MarcRuemekorf" target="_blank">GitHub</a>
 			&nbsp;·&nbsp;
-			<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+			<a href="https://linkedin.com/in/marcruemekorf" target="_blank">LinkedIn</a>
 		</span>
 	</footer>
 
@@ -263,7 +265,7 @@
 		// Current year
 		document.getElementById('year').textContent = new Date().getFullYear();
 
-		// GSAP animations
+		// GSAP
 		gsap.registerPlugin(ScrollTrigger);
 
 		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -278,6 +280,7 @@
 				.from('.hero-title', { opacity: 0, y: 30, duration: 0.8 }, '-=0.3')
 				.from('.hero-sub', { opacity: 0, y: 30, duration: 0.6 }, '-=0.3')
 				.from('.hero-rule', { opacity: 0, y: 20, duration: 0.5 }, '-=0.2')
+        .from('.hero-profile-tag', { opacity: 0, scale: 0.8, duration: 0.6 }, '-=0.5')
         .from('.hero-occupation', { opacity: 0, x: 10, duration: 0.5 }, '-=0.2');
 
 			// Section header
@@ -302,6 +305,29 @@
 			gsap.from('footer', {
 				scrollTrigger: { trigger: 'footer', start: 'top 95%', once: true },
 				opacity: 0, y: 20, duration: 0.5, ease: 'power2.out'
+			});
+
+			// Hero profile tag — follow cursor
+			const heroSection = document.querySelector('.hero-content');
+			const profileTag  = document.querySelector('.hero-profile-tag');
+
+			// Capture natural center relative to hero before any transform is applied
+			const _heroRect = heroSection.getBoundingClientRect();
+			const _tagRect  = profileTag.getBoundingClientRect();
+			const homeX = _tagRect.left - _heroRect.left + _tagRect.width  / 2;
+			const homeY = _tagRect.top  - _heroRect.top  + _tagRect.height / 2;
+
+			const xTo = gsap.quickTo(profileTag, 'x', { duration: 0.6, ease: 'power3.out' });
+			const yTo = gsap.quickTo(profileTag, 'y', { duration: 0.6, ease: 'power3.out' });
+
+			heroSection.addEventListener('mousemove', e => {
+				const rect = heroSection.getBoundingClientRect();
+				xTo(e.clientX - rect.left - homeX);
+				yTo(e.clientY - rect.top  - homeY);
+			});
+
+			heroSection.addEventListener('mouseleave', () => {
+				gsap.to(profileTag, { x: 0, y: 0, duration: 1.2, ease: 'power3.out' });
 			});
 		}
 
@@ -338,11 +364,15 @@
 			const rz = rand(40, 60);
 			const rw = rand(40, 60);
 
+			el.style.willChange = 'transform, border-radius';
 			el.style.transform = `translate(${x}px, ${y}px)`;
-			el.style.borderRadius = `${rx}% ${100 - rx}% ${ry}% ${100 - ry}% / ${rz}% ${rw}% ${100 - rw}% ${100 - rz}%`;
+			el.style.borderRadius = `${rx}% ${100 - rx}% ${ry}% ${100 - ry}% / ${rz}% ${rw}% ${100 - rz}%`;
 
 			const delay = rand(3000, 6000);
-			setTimeout(() => animateBlob(el), delay);
+			setTimeout(() => {
+				el.style.willChange = 'auto';
+				animateBlob(el);
+			}, delay);
 		}
 
 		const blobA = document.getElementById('blob-a');
@@ -359,6 +389,7 @@
 		});
 
 	</script>
+	<script src="./scripts/scramble-text.js"></script>
 
 </body>
 
